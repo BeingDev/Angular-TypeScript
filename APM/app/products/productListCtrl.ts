@@ -2,14 +2,14 @@ module app.productList {
 	interface IProductListModel {
 		title: string;
 		showImage: boolean;
-		products: any[];
+		products: app.domain.IProduct[];
 		toggleImage(): void;
 	}
 
 	class ProductListCtrl implements IProductListModel {
 		title: string;
 		showImage: boolean;
-		products: any[];
+		products: app.domain.IProduct[];
 
 		constructor() {
 			this.title = 'Product List';
@@ -43,6 +43,10 @@ module app.productList {
 					"imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
 				}
 			];
+
+			var newProduct = new app.domain.Product(6, "Sae", "TBX-002", new Date(), 99, "asdfasdf", "");
+			newProduct.calculateDiscount(10);
+			this.products.push(newProduct);
 		}
 
 		toggleImage(): void {

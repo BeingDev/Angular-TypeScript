@@ -35,6 +35,9 @@ var app;
                         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
                     }
                 ];
+                var newProduct = new app.domain.Product(6, "Sae", "TBX-002", new Date(), 99, "asdfasdf", "");
+                newProduct.calculateDiscount(10);
+                this.products.push(newProduct);
             }
             ProductListCtrl.prototype.toggleImage = function () {
                 this.showImage = !this.showImage;
