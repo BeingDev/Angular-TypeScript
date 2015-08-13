@@ -19,7 +19,8 @@
     </nav>
 
     <div class="container">
-        <div ng-include="'app/products/productListView.html'"></div>
+        <!--<div ng-include="'app/products/productListView.html'"></div>-->
+        <ng-view></ng-view>
     </div>
 
     <!-- Library Scripts -->
@@ -38,6 +39,7 @@
     <script src="app/common/services/dataAccessService.js"></script>
     <!-- Controllers -->
     <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/ProductDetailCtrl.js"></script>
 </body>
 
 </html>
