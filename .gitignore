@@ -201,3 +201,6 @@ APM/app/app.js
 APM/app/common/services/common.services.js
 APM/app/common/services/dataAccessService.js
 APM/app/common/services/productResourceMock.js
+APM/typings/angularjs/angular-mocks.d.ts
+APM/app/products/productListCtrl.js
+APM/app/products/productListCtrl.js
